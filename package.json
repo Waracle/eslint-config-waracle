@@ -1,0 +1,67 @@
+{
+  "name": "eslint-config-waracle",
+  "version": "0.0.0",
+  "description": "Waraclised version of the Airbnb eslint ruleset",
+  "main": "base.js",
+  "scripts": {
+    "format": "prettier --write \"./**/*.{ts,js,json,md}\" --ignore-path ./.prettierignore"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:Waracle/eslint-config-waracle.git"
+  },
+  "keywords": [
+    "eslint",
+    "lint",
+    "rules",
+    "sonarcloud",
+    "typescript",
+    "waracle"
+  ],
+  "author": "Waracle Ltd. <support@waracle.com>",
+  "contributors": [
+    {
+      "name": "Dan Overton",
+      "email": "d.overton@waracle.com"
+    },
+    {
+      "name": "Daniel Waghorn",
+      "email": "d.waghorn@waracle.com"
+    },
+    {
+      "name": "Nick Hammond",
+      "email": "n.hammond@waracle.com"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Waracle/eslint-config-waracle#readme",
+  "peerdependencies": {
+    "@typescript-eslint/eslint-plugin": {
+      "optional": true
+    },
+    "@typescript-eslint/parser": {
+      "optional": true
+    },
+    "eslint": "^7.0.0",
+    "eslint-plugin-sonarjs": {
+      "optional": true
+    },
+    "typescript": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-prettier": "6.15.0"
+  },
+  "devDependencies": {
+    "@types/prettier": "2.1.6",
+    "commitizen": "^4.2.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "7.19.0",
+    "eslint-plugin-sonarjs": "0.5.0",
+    "husky": "^4.3.8",
+    "prettier": "2.2.1",
+    "semantic-release": "17.3.7"
+  }
+}
