@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:Waracle/eslint-config-waracle.git"
+    "url": "git@github.com:Waracle/eslint-config-waracle.git"
   },
   "keywords": [
     "eslint",
@@ -55,6 +55,8 @@
     "eslint-config-prettier": "6.15.0"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "5.0.1",
+    "@semantic-release/git": "9.0.0",
     "@types/prettier": "2.1.6",
     "commitizen": "^4.2.3",
     "cz-conventional-changelog": "^3.3.0",
