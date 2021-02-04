@@ -1,0 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
+**/*
+!docs/**/*
+!lib/**/*
+!base.js
+!index.js
+!*.md
+!package.json
+!sonarcloud.js
+!typescript.js
