@@ -26,7 +26,8 @@ In `.eslintrc.json`:
 
 ### Typescript
 
-For TypeScript projects use the configuration *typescript*
+For TypeScript projects use the configuration _typescript_
+
 ```json
 {
   "extends": ["waracle/typescript"]
@@ -35,13 +36,16 @@ For TypeScript projects use the configuration *typescript*
 
 ### Sonarcloud
 
-For projects using [SonarCloud](https://sonarcloud.io), **also** use the configuration *sonarcloud*
+For projects using [SonarCloud](https://sonarcloud.io), **also** use the configuration _sonarcloud_
+
 ```json
 {
   "extends": ["waracle", "waracle/sonarcloud"]
 }
 ```
-OR 
+
+OR
+
 ```json
 {
   "extends": ["waracle/typescript", "waracle/sonarcloud"]
