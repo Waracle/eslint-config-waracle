@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Waracle/eslint-config-waracle/compare/v1.0.0...v1.1.0) (2021-11-02)
+
+
+### Features
+
+* disables common false positives ([9e33b9e](https://github.com/Waracle/eslint-config-waracle/commit/9e33b9ebd63e2413ed841ff471f94e05b9eb321c))
+
 # 1.0.0 (2021-02-04)
 
 
