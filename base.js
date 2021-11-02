@@ -1,7 +1,11 @@
 module.exports = {
   extends: ["eslint:recommended", "airbnb", "prettier"],
   rules: {
+    "class-methods-use-this": "off",
+    "no-await-in-loop": "off",
+    "no-restricted-syntax": "off",
     "no-shadow": "off",
+    "no-template-curly-in-string": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -22,10 +26,11 @@ module.exports = {
     "no-underscore-dangle": [
       "error",
       {
+        allow: ['_id'],
         allowAfterThis: true,
       },
     ],
-    "class-methods-use-this": "off",
+    "@typescript-eslint/no-explicit-any": "off",
   },
   overrides: [
     {
