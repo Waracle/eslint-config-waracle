@@ -30,7 +30,6 @@ module.exports = {
         allowAfterThis: true,
       },
     ],
-    "@typescript-eslint/no-explicit-any": "off",
   },
   overrides: [
     {
