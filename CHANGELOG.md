@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/Waracle/eslint-config-waracle/compare/v1.1.0...v1.1.1) (2021-11-02)
+
+
+### Bug Fixes
+
+* moves erroneous rule to typescript ruleset from base ([028005a](https://github.com/Waracle/eslint-config-waracle/commit/028005ad59b7c2e409c89484cd21ba0e711fc6cf))
+
 # [1.1.0](https://github.com/Waracle/eslint-config-waracle/compare/v1.0.0...v1.1.0) (2021-11-02)
 
 
