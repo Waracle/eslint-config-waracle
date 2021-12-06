@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/Waracle/eslint-config-waracle/compare/v1.1.1...v1.2.0) (2021-12-06)
+
+
+### Features
+
+* adds __v to no-underscore-dangle allow list ([b68fb15](https://github.com/Waracle/eslint-config-waracle/commit/b68fb15bbdb99a6466cac815b6ce26f640b27cb2))
+
 ## [1.1.1](https://github.com/Waracle/eslint-config-waracle/compare/v1.1.0...v1.1.1) (2021-11-02)
 
 
