@@ -1,4 +1,4 @@
-module.exports = {
-  extends: ['plugin:sonarjs/recommended', './base'],
-  plugins: ['sonarjs'],
-}
+const sonarjs = require('eslint-plugin-sonarjs');
+const base = require('./base');
+
+module.exports = [...base, sonarjs.configs.recommended];

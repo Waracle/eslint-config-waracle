@@ -29,6 +29,10 @@
     {
       "name": "Nick Hammond",
       "email": "n.hammond@waracle.com"
+    },
+    {
+      "name": "Sam Wall",
+      "email": "sam.wall@waracle.com"
     }
   ],
   "main": "base.js",
@@ -37,34 +41,25 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "eslint-config-airbnb": "18.2.1",
-    "eslint-config-prettier": "7.2.0"
+    "eslint-config-airbnb-extended": "3.0.1",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-sonarjs": "3.0.7"
   },
   "devDependencies": {
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/git": "9.0.1",
+    "@typescript-eslint/eslint-plugin": "8.55.0",
+    "@typescript-eslint/parser": "8.55.0",
     "commitizen": "4.3.1",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "7.32.0",
-    "eslint-plugin-sonarjs": "0.25.1",
+    "eslint": "9.39.2",
     "husky": "^9.1.7",
     "prettier": "3.8.1",
     "prettier-plugin-packagejson": "^3.0.0",
     "semantic-release": "17.4.7"
   },
   "peerdependencies": {
-    "@typescript-eslint/eslint-plugin": {
-      "optional": true
-    },
-    "@typescript-eslint/parser": {
-      "optional": true
-    },
-    "eslint": "^7.0.0",
-    "eslint-plugin-sonarjs": {
-      "optional": true
-    },
-    "typescript": {
-      "optional": true
-    }
+    "eslint": "^9.0.0",
+    "typescript": "*"
   }
 }
