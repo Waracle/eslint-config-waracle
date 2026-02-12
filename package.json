@@ -33,7 +33,8 @@
   ],
   "main": "base.js",
   "scripts": {
-    "format": "prettier --write \"./**/*.{ts,js,json,md}\" --ignore-path ./.prettierignore"
+    "format": "prettier --write \"./**/*.{ts,js,json,md}\" --ignore-path ./.prettierignore",
+    "prepare": "husky"
   },
   "dependencies": {
     "eslint-config-airbnb": "18.2.1",
@@ -46,7 +47,7 @@
     "cz-conventional-changelog": "3.3.0",
     "eslint": "7.32.0",
     "eslint-plugin-sonarjs": "0.25.1",
-    "husky": "4.3.8",
+    "husky": "^9.1.7",
     "prettier": "3.8.1",
     "prettier-plugin-packagejson": "^3.0.0",
     "semantic-release": "17.4.7"
