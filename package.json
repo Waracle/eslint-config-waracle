@@ -2,14 +2,6 @@
   "name": "eslint-config-waracle",
   "version": "1.2.0",
   "description": "Waraclised version of the Airbnb eslint ruleset",
-  "main": "base.js",
-  "scripts": {
-    "format": "prettier --write \"./**/*.{ts,js,json,md}\" --ignore-path ./.prettierignore"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:Waracle/eslint-config-waracle.git"
-  },
   "keywords": [
     "eslint",
     "lint",
@@ -18,6 +10,12 @@
     "typescript",
     "waracle"
   ],
+  "homepage": "https://github.com/Waracle/eslint-config-waracle#readme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Waracle/eslint-config-waracle.git"
+  },
+  "license": "MIT",
   "author": "Waracle Ltd. <support@waracle.com>",
   "contributors": [
     {
@@ -33,8 +31,26 @@
       "email": "n.hammond@waracle.com"
     }
   ],
-  "license": "MIT",
-  "homepage": "https://github.com/Waracle/eslint-config-waracle#readme",
+  "main": "base.js",
+  "scripts": {
+    "format": "prettier --write \"./**/*.{ts,js,json,md}\" --ignore-path ./.prettierignore"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-prettier": "7.2.0"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "5.0.1",
+    "@semantic-release/git": "9.0.1",
+    "commitizen": "4.3.1",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "7.32.0",
+    "eslint-plugin-sonarjs": "0.25.1",
+    "husky": "4.3.8",
+    "prettier": "3.8.1",
+    "prettier-plugin-packagejson": "^3.0.0",
+    "semantic-release": "17.4.7"
+  },
   "peerdependencies": {
     "@typescript-eslint/eslint-plugin": {
       "optional": true
@@ -49,21 +65,5 @@
     "typescript": {
       "optional": true
     }
-  },
-  "dependencies": {
-    "eslint-config-airbnb": "18.2.1",
-    "eslint-config-prettier": "7.2.0"
-  },
-  "devDependencies": {
-    "@semantic-release/changelog": "5.0.1",
-    "@semantic-release/git": "9.0.1",
-    "@types/prettier": "3.0.0",
-    "commitizen": "4.3.1",
-    "cz-conventional-changelog": "3.3.0",
-    "eslint": "7.32.0",
-    "eslint-plugin-sonarjs": "0.25.1",
-    "husky": "4.3.8",
-    "prettier": "3.8.1",
-    "semantic-release": "17.4.7"
   }
 }

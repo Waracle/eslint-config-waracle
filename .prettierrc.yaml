@@ -1,0 +1,7 @@
+bracketSameLine: true
+bracketSpacing: false
+semi: false
+singleAttributePerLine: true
+singleQuote: true
+plugins:
+  - prettier-plugin-packagejson
