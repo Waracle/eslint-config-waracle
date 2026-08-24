@@ -38,28 +38,31 @@
   "main": "base.js",
   "scripts": {
     "format": "prettier --write \"./**/*.{ts,js,json,md}\" --ignore-path ./.prettierignore",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test": "node --test"
   },
   "dependencies": {
-    "eslint-config-airbnb-extended": "3.0.1",
+    "@eslint/js": "9.39.5",
+    "eslint-config-airbnb-extended": "3.2.0",
     "eslint-config-prettier": "10.1.8",
-    "eslint-plugin-sonarjs": "3.0.7"
+    "eslint-plugin-jest": "29.16.1",
+    "eslint-plugin-sonarjs": "4.2.0"
   },
   "devDependencies": {
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/git": "9.0.1",
-    "@typescript-eslint/eslint-plugin": "8.59.2",
-    "@typescript-eslint/parser": "8.59.2",
+    "@typescript-eslint/eslint-plugin": "8.67.0",
+    "@typescript-eslint/parser": "8.67.0",
     "commitizen": "4.3.1",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "9.39.4",
+    "eslint": "9.39.5",
     "husky": "^9.1.7",
     "prettier": "3.8.3",
     "prettier-plugin-packagejson": "^3.0.0",
     "semantic-release": "17.4.7"
   },
-  "peerdependencies": {
-    "eslint": "^9.0.0",
+  "peerDependencies": {
+    "eslint": "^9.0.0 || ^10.0.0",
     "typescript": "*"
   }
 }
