@@ -1,9 +1,10 @@
-const airbnbExtended = require('eslint-config-airbnb-extended');
-const base = require('./base');
+const airbnbExtended = require('eslint-config-airbnb-extended')
+const base = require('./base')
 
 module.exports = [
   ...base,
-  ...airbnbExtended.configs.typescript,
+  airbnbExtended.plugins.typescriptEslint,
+  ...airbnbExtended.configs.base.typescript,
   {
     rules: {
       'no-shadow': 'off',
@@ -18,9 +19,9 @@ module.exports = [
     },
   },
   {
-    files: ['*.tsx'],
+    files: ['*.tsx', '**/*.tsx'],
     rules: {
       '@typescript-eslint/no-unused-vars': 'off',
     },
   },
-];
+]

@@ -1,11 +1,14 @@
-const airbnbExtended = require('eslint-config-airbnb-extended');
-const prettier = require('eslint-config-prettier');
-const js = require('@eslint/js');
-const jest = require('eslint-plugin-jest');
+const airbnbExtended = require('eslint-config-airbnb-extended')
+const prettier = require('eslint-config-prettier')
+const js = require('@eslint/js')
+const jest = require('eslint-plugin-jest')
 
 module.exports = [
   js.configs.recommended,
-  ...airbnbExtended.configs.recommended,
+  airbnbExtended.plugins.stylistic,
+  airbnbExtended.plugins.importX,
+  airbnbExtended.plugins.node,
+  ...airbnbExtended.configs.base.recommended,
   prettier,
   {
     rules: {
@@ -14,7 +17,7 @@ module.exports = [
       'no-restricted-syntax': 'off',
       'no-shadow': 'off',
       'no-template-curly-in-string': 'off',
-      'import/extensions': [
+      'import-x/extensions': [
         'error',
         'ignorePackages',
         {
@@ -24,13 +27,13 @@ module.exports = [
           tsx: 'never',
         },
       ],
-      'import/no-extraneous-dependencies': [
+      'import-x/no-extraneous-dependencies': [
         'error',
         {
           devDependencies: ['**/*.spec.ts', '**/*.spec.tsx'],
         },
       ],
-      'import/prefer-default-export': 'off',
+      'import-x/prefer-default-export': 'off',
       'no-underscore-dangle': [
         'error',
         {
@@ -41,12 +44,15 @@ module.exports = [
     },
   },
   {
-    files: ['**/*.spec.ts'],
-    plugins: {
-      jest,
+    files: ['**/*.spec.ts', '**/*.spec.tsx'],
+    ...jest.configs['flat/recommended'],
+    settings: {
+      jest: {
+        version: 29,
+      },
     },
     rules: {
-      ...jest.configs.recommended.rules,
+      ...jest.configs['flat/recommended'].rules,
       'jest/no-disabled-tests': 'warn',
       'jest/no-focused-tests': 'error',
       'jest/no-identical-title': 'error',
@@ -54,4 +60,4 @@ module.exports = [
       'jest/valid-expect': 'error',
     },
   },
-];
+]
