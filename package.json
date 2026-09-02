@@ -43,7 +43,7 @@
   "dependencies": {
     "eslint-config-airbnb-extended": "3.0.1",
     "eslint-config-prettier": "10.1.8",
-    "eslint-plugin-sonarjs": "3.0.7"
+    "eslint-plugin-sonarjs": "4.2.0"
   },
   "devDependencies": {
     "@semantic-release/changelog": "5.0.1",
