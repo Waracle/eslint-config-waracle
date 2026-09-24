@@ -41,7 +41,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "eslint-config-airbnb-extended": "3.0.1",
+    "eslint-config-airbnb-extended": "3.2.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-sonarjs": "3.0.7"
   },
